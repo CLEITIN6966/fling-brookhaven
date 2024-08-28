@@ -1,0 +1,16 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+--local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Define o CFrame de deitar
+local layDownCFrame = humanoidRootPart.CFrame * CFrame.Angles(math.rad(90), 0, 0)
+
+-- Mantém o personagem deitado em loop
+while true do
+    humanoidRootPart.CFrame = layDownCFrame
+    wait(00000000000000)  -- Ajuste o intervalo conforme necessário
+end
