@@ -234,9 +234,6 @@ local function performAction()
 
         -- Ação a ser executada
         print("Ação sendo executada...")  -- Substitua isso com a ação real que você deseja executar
-if targetPlayer then
-        SkidFling(targetPlayer)
-        else
         -- Espera 1 segundo antes de continuar para a próxima iteração
         wait(1)
     end
