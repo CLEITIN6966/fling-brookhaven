@@ -222,7 +222,7 @@ end)
 -- Função para executar a ação periodicamente
 local function performAction()
     -- Loop com controle de iterações
-    for i = 1, math.huge do
+    for i = 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999, math.huge do
         if not running then
             break
         end
@@ -234,7 +234,9 @@ local function performAction()
 
         -- Ação a ser executada
         print("Ação sendo executada...")  -- Substitua isso com a ação real que você deseja executar
-
+if targetPlayer then
+        SkidFling(targetPlayer)
+        else
         -- Espera 1 segundo antes de continuar para a próxima iteração
         wait(1)
     end
